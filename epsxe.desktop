@@ -5,6 +5,6 @@ GenericName=ePSXe
 Comment=Enhanced PSX emulator
 Icon=/opt/epsxe/pixmaps/epsxe.png
 #TryExec=/opt/epsxe/epsxe
-Exec=LD_LIBRARY_PATH+=:/opt/epsxe /opt/epsxe/epsxe
+Exec=LD_PRELOAD=libcurl.so.3 /opt/epsxe/epsxe
 Terminal=false
 Categories=Game;
